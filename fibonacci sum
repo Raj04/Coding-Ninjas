@@ -1,0 +1,15 @@
+import java.io.*;
+import java.lang.*;
+
+class GFG {
+   static int fibo(int n){
+  if(n==0||n==1){
+    return n;
+  }
+  int sum=fibo(n-1)+fibo(n-2);
+  return sum+1;
+}
+	public static void main (String[] args) {
+        System.out.println(fibo((4)));
+	}
+}
