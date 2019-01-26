@@ -1,0 +1,12 @@
+
+public class solution {
+
+	public static int multiplyTwoIntegers(int m, int n){
+	
+      if(n==1){
+        return m;
+      }
+      int total=m+multiplyTwoIntegers(m,--n);
+      return total;
+	}
+}
