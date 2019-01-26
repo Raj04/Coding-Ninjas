@@ -1,0 +1,20 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+    
+    public static void even_odd(int m,int n){
+        if(m<=n){
+            even_odd(m,n-1);
+            if(n%2==0){
+                System.out.println("even "+n);
+            }else{
+                System.out.println("odd "+n);
+            }
+        }
+    }
+	public static void main (String[] args) {
+	    even_odd(10,15);
+	}
+}
