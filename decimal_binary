@@ -1,0 +1,20 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+    
+    public static void decimal_binary(int n){
+        if(n==0){
+            return;
+        }
+        int rem=n%2;
+        decimal_binary(n/2);
+        System.out.print(rem);
+    }
+    
+	public static void main (String[] args) {
+	    System.out.println();
+	    decimal_binary(8);
+	}
+}
