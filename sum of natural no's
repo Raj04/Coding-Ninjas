@@ -1,0 +1,25 @@
+/**/
+import java.io.*;
+
+class GFG {
+    
+    public static void printNatural(int m,int n){
+        
+        /*if(n==1){
+            return ;
+        }
+        printNatural(--n); we cannot do this as we are decrementing the value of n in the function first then we are passing 
+                            so it would always print one less ex-> for 1-5--> 1 2 3 4 5                               
+        System.out.println(n);*/
+        
+        if(m<=n){
+            printNatural(m,n-1);
+            System.out.println(n);
+        }
+    }
+	public static void main (String[] args) {
+	    printNatural(1,5);
+		System.out.println("GfG!");
+		
+	}
+}
