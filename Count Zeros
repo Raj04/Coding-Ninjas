@@ -1,0 +1,17 @@
+
+public class solution {
+
+	public static int countZerosRec(int input){
+		
+      if(input==0){
+        return 0;
+      }
+      int rem=input%10;
+      int total=0;
+      if(rem==0){
+        total++;
+      }
+      total+=countZerosRec(input/10);
+      return total;
+	}
+}
