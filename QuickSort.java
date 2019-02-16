@@ -73,13 +73,21 @@ public class solution {
             } 
             k++; 
         }   
-        /* Copy remaining elements of L[] */
+        /* Copy remaining elements of L[],R[]
+		ex-[1,8,10] [9,15] -->here 15 will be copied as the rest element in the array
+			[1,8,22] [9,15] --> here 22 will be copied as it is the only element
+	*/
         while (i < n1) 
         { 
             arr[k] = L[i]; 
             i++; 
             k++; 
         } 
-        
+        while (j < n2) 
+        { 
+            arr[k] = R[j]; 
+            j++; 
+            k++; 
+        } 
     } 
 }
