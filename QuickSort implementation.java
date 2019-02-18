@@ -1,7 +1,8 @@
 
-import java.io.*;
-
 //run on https://ide.geeksforgeeks.org/
+
+
+import java.io.*;
 
 class GFG {
     
