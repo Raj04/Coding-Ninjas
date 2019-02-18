@@ -1,4 +1,6 @@
 
+//run on https://ide.geeksforgeeks.org/
+
 import java.util.Scanner;
 
 public class runner {
