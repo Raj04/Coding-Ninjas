@@ -5,8 +5,6 @@ Given a binary tree, check if its balanced i.e. depth of left and right subtrees
 Return true if given binary tree is balanced, false otherwise.
 */
 
-
-
 public class Solution {
 
 /*	Binary Tree Node class
@@ -30,9 +28,17 @@ public class Solution {
         }
         int ldepth=height(root.left);
         int rdepth=height(root.right);
-        if(ldepth-rdepth<=1){
-            return true;
+        if(checkBalanced(root.left)){
+            if(checkBalanced(root.right)){
+                if(Math.abs(ldepth-rdepth)<=1){
+                    return true;
+                }    
+            }
+            
+            
         }
+        
+     
         return false;
 	}
     public static int height(BinaryTreeNode<Integer> root){
@@ -43,11 +49,10 @@ public class Solution {
         int rdepth=height(root.right);
         if(ldepth>rdepth){
             return ldepth+1;
-        }else{
-            return rdepth+1;
         }
-        
-        
+        else{
+            return rdepth+1;
+        }      
     }
 
 	
